@@ -11,5 +11,14 @@ and open the template in the editor.
     </head>
     <body>
         Sistema de Cadastro 
+
+        <h1>login</h1>
+        <form action="login.php" method="post">
+            <label>Usuário: </label>
+            <input type="text" name="usuario"/>
+            <label>Senha</label>
+            <input type="password" name="senha"/>
+            <input type="submit" value="Entrar"/>
+        </form>
     </body>
 </html>
