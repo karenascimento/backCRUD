@@ -2,7 +2,19 @@
     <head>
         <title>Listagem de dados</title>                
     </head>
-    <body>        
+    <body>
+        <?php
+            session_start();
+            if(!isset($_SESSION['usuario'])){
+                header('Loation: index.php');
+            }else{
+                echo "<p>Bem-vindo" .
+                $_SESSION['usuario'] . 
+                "<a href = 'logout.php'> Sair</a></br>" . 
+                "</p>";
+            }
+        ?>
+
         <h1>Listagem de dados</h1>
         <table>
             <tr>
